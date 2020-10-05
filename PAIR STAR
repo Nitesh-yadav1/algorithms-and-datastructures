@@ -1,0 +1,11 @@
+def pairstar(S,output,i=0):
+    output=output+S[i]
+    if (i==len(S)-1):
+        print(output)
+        return
+    if(S[i]==S[i+1]):
+        output=output + '*'
+    pairstar(S,output,i+1)
+S=input()
+output=" "
+pairstar(S,output)
