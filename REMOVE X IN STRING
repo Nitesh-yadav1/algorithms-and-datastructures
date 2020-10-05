@@ -1,0 +1,10 @@
+def removeX(str,x): #imp
+    if(len(str)==0):
+        return ""
+    if (str[0]==x):
+        return removeX(str[1:],x)
+    return str[0]+removeX(str[1:],x)
+# Main
+string = input()
+x='x'
+print(removeX(string,x))
