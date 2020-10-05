@@ -1,0 +1,14 @@
+def multiple(x,y):
+    if(y<0):
+        return -multiple(x,-y)
+    elif y==0:
+        return 0
+    elif y==1:
+        return x
+    else:
+        return x+multiple(x,y-1)
+    
+x=int(input())
+y=int(input())
+
+print(multiple(x,y))
