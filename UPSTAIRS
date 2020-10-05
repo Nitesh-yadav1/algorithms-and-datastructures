@@ -1,0 +1,10 @@
+def upstairs(n):
+    if n<0:
+        return 0
+    if n<=2:
+        return n
+    if n==3:
+        return 4
+    return upstairs(n-1)+upstairs(n-2)+upstairs(n-3)
+n=int(input())
+upstairs(n)
